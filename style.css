@@ -1,3 +1,328 @@
-*{
-    margin: 0;
+
+
+body{
+	background-image:url('img/bg.png') ;
+	
+	background-color: hsl(0, 100%, 74%);
+	background-size: cover;
+	background-position: center;
+
+font-family: 'Poppins', sans-serif;
+
+}
+ .input:invalid:focus{
+  	background: url(img/icon-error.svg) no-repeat 96%center white;
+  outline: 2px solid hsl(0, 100%, 74%);
+  border-radius: 5px;
+}
+   .input:required:focus ~ .error-message{
+  	display: block;
+  	color: hsl(0, 100%, 74%) ;
+  	text-align: right;
+  	font-size: 12px;
+  	font-style: italic;
+ }
+  .input:valid:focus ~ .error-message{
+    display: none;
+  }
+   .error-message{
+ 	display: none;
+ 	margin-bottom: 10px;
+ }
+
+
+  .input:valid{
+  	outline: 2px solid silver;
+    }
+ .input:required{
+   	
+  outline: 2px solid transparent;
+   
+ }
+ 
+
+input[type=email]:invalid:focus::-webkit-input-placeholder{
+ 	color:hsl(0, 100%, 74%);
+ }
+
+
+.container{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	align-self: center;
+	
+	 font-size: 20px;
+	 margin-right: 5rem;
+	 font-family: 'Poppins', sans-serif;
+	
+
+}
+.errorDisplayer{color: red;}
+h1{
+	color: white;
+	font-size: 50px;
+	line-height: 50px;
+
+}
+p{
+	line-height: 22px;
+	font-weight: 100;
+	font-size: 15px;
+	color: #ddd;
+}
+.box{
+	margin-top: 1rem;
+	 box-shadow: 0px 7px 0px rgba(0, 0, 0, 0.4);
+	 border-radius: 20px;
+
+}
+.first{
+	border: 1px solid hsl(248, 32%, 49%);
+	background: hsl(248, 32%, 49%);
+	color: white;
+	font-size: 13px;
+	width: 510px;
+	padding: 17px;
+
+	margin-bottom: 10px;
+	border-radius: 10px;
+	text-align: center;
+	  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+	font-weight: 200;
+}
+.input-box{
+	border: 1px solid white;
+	background: white;
+	padding: 20px;
+	border-radius: 5px;
+	padding-top: 30px;
+
+}
+input[type=text],
+input[type=email],
+input[type=password]{
+	border: 1px solid #ddd;
+	width: 470px;
+	padding-left: 20px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	border-radius: 5px;
+	margin-bottom: 8px;
+	
+
+}
+input[type=password]{
+	margin-bottom: 8px;
+
+}
+input[type=submit]{
+
+border: 1px solid hsl(154, 59%, 51%);
+background: hsl(154, 59%, 51%);
+width: 500px;
+	
+	padding: 17px;
+	text-align: center;
+	color: white;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	 box-shadow: 0px 7px 0px rgba(0, 0.8, 0, 0.);
+ cursor: pointer;
+}
+ins{
+	color: hsl(0, 100%, 74%) ;
+	text-decoration: none;
+
+
+}
+
+.last{
+	color: #ddd;
+	text-align: center;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+::placeholder {
+  color: grey;
+  font-weight: bold;
+}
+
+
+.in{
+	color: #ddd;
+
+	
+}
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+
+	h1{
+	
+	font-size: 25px;
+	margin-left: 20px;
+	line-height: 30px;
+
+ }
+ p{
+ 	font-size:13px;
+ 	margin-left: 20px;
+ }
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=submit]{
+
+	width: 300px;
+}
+input[type=text],
+input[type=email],
+input[type=password]{
+	padding-right: 10px;
+}
+.box{
+	margin-right: 40px;
+}
+.first{
+	width: 350px;
+}
+input[type=submit]{
+	width: 330px;
+}
+
+
+
+
+.last{
+	font-size: 10px;
+}
+}
+
+@media screen and (min-width:801px) and (max-width: 900px) {
+  
+
+h1{
+	
+	font-size: 23px;
+	margin-left: 20px;
+	line-height: 22px;
+
+ }
+ p{
+ 	font-size:12px;
+ 	margin-left: 20px;
+ 	line-height: 18px;
+ }
+ header{
+ 	margin-left: 60px;
+ }
+
+
+}
+@media screen and (max-width: 800px){
+ .container{
+ 	display: flex;
+ 	flex-direction: column;
+ 	
+ }
+header{
+	text-align: center;
+	margin-top: 0px;
+	
+	
+	 margin-right: 5rem;
+	 font-family: 'Poppins', sans-serif;
+	
+
+}
+h1{
+	
+	font-size: 17px;
+	margin-left: 60px;
+	line-height: 20px;
+
+ }
+ p{
+ 	font-size:12px;
+ margin-left: 60px;
+ 	line-height: 18px;
+ 	margin-bottom: 40px;
+ }
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=submit]{
+
+	width: 280px;
+}
+input[type=text],
+input[type=email],
+input[type=password]{
+	padding-right: 10px;
+}
+
+
+
+.first{
+	width: 310px;
+	padding: 24px;
+	line-height: 17px;
+	word-spacing: 2px;
+}
+input[type=submit]{
+	width: 310px
+}
+.box{
+	width: 360px;
+	margin: auto;
+	margin-bottom: 4rem;
+}
+.last{
+	font-size: 12px;
+	word-spacing: 1px;
+	line-height: 17px;
+}
+}
+@media screen and (max-width: 375px){
+ input[type=text],
+input[type=email],
+input[type=password],
+input[type=submit]{
+
+	width: 220px;
+}
+input[type=text],
+input[type=email],
+input[type=password]{
+	padding-right: 10px;
+}
+
+
+
+.first{
+	width: 250px;
+	padding: 24px;
+	line-height: 17px;
+	word-spacing: 2px;
+}
+input[type=submit]{
+	width: 250px
+}
+
+
+.box{
+	width: 300px;
+	margin: auto;
+	margin-bottom: 4rem;
+}
+.last{
+	font-size: 12px;
+	word-spacing: 1px;
+	line-height: 17px;
+}
+
 }
